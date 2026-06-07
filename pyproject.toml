@@ -9,7 +9,7 @@
 
 [project]
 name = "project-name"
-version = "0.0.0"
+version = "0.1.0"
 authors = [
     {name = "author-alias", email = "author.git@email.domain"},
 ]
@@ -17,6 +17,18 @@ maintainers = [
     {name = "maintainer-alias", email = "maintainer.git@email.domain"},
 ]
 description = "{short-description}"
+keywords = ["{keyword-1}", "{keyword-2}"]
+classifiers = [
+    # How mature is this project? Common values are
+    #   3 - Alpha
+    #   4 - Beta
+    #   5 - Production/Stable
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+    "Operating System :: POSIX :: Linux",
+]
 license = "GPL-3.0-or-later" # https://packaging.python.org/en/latest/guides/licensing-examples-and-user-scenarios/
 # license-files = ["LICENSE" ]
 readme = "README.md"
@@ -44,6 +56,10 @@ indent-style = "space"
 skip-magic-trailing-comma = false
 docstring-code-format = false
 line-ending = "auto"
+
+[tool.ruff.lint]
+# Enable the isort rules.
+extend-select = ["I"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "pep257"

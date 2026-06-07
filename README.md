@@ -1,3 +1,5 @@
+<sup>This project has been generated using ['A-Python-Template' (APT)](https://github.com/a-matthew/a-python-template).</sup>
+
 ## Metadata
 <!-- - Author: {author-profile-name}/{author-alias}. -->
 - Name: '{project-name}'.
@@ -30,7 +32,7 @@
     - `.\py.exe -{python-version} -m venv "{path}/{project-name}/venv-{python-version}"` <sub>suggested</sub>
     - everything below
   - Linux
-    - `python{python-version} -m venv {path}/{project-name}/{python-version}` <sub>suggested</sub>
+    - `python{python-version} -m venv {path}/{project-name}/venv-{python-version}` <sub>suggested</sub>
     - everything below
   1. `cd {path}/{project-name}`
   2. `source venv-{python-version}/bin/activate`
@@ -46,6 +48,11 @@
     <!-- - `{project-name}/tests.py` -->
   - local CI
     <!-- - `pre-commit run --all-files` -->
+    <!-- - - Files must be first added by `git add` for `pre-commit run` to detect. -->
+    <!-- - - `pre-commit run` will install a .venv inside `~/.cache/pre-commit/` -->
+  - local CD
+    - AppImage deployment
+    - - refer to [AppImage/README](AppImage/README.md)
 
 ## Example
 ### {example-1-title}
