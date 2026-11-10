@@ -3,23 +3,23 @@
 # {project-name}
 
 ## Metadata
-<!-- - Author: {author-profile-name}/{author-alias}. -->
+<!-- - Author: {author-name}/{author-alias}. -->
 - Name: '{project-name}'.
-- Purpose: {short-description}.
-- Format: {package-format}.
+- Purpose: {project-summary}.
+- Format: {project-format}.
 - License:
   - This project's license: [GNU General Public License v3.0](LICENSE)
-  <!-- - Dependency-1: [{dependency-name}({license-1-name})] -->
-  <!-- - Dependency-2: [{dependency-name}({license-2-name})] -->
+  <!-- - Dependency-1: [{dependency-1-name}]({dependency-1-license}) -->
+  <!-- - Dependency-2: [{dependency-2-name}]({dependency-2-license}) -->
 
 ## Features
 - {feature-1}
 - {feature-2}
 
 ## Setup
-### Dependencies:
+### Dependencies
   - Version: __{python-version}__
-  - Manager: [__{python-manager}__]({python-manager-link})
+  - Manager: [__{python-manager}__]({python-manager-url})
   <!-- [__pip__](https://docs.python.org/3/installing/index.html) -->
   <!-- [__poetry__](https://github.com/python-poetry/poetry) -->
   <!-- [__uv__](https://github.com/astral-sh/uv) -->
@@ -27,14 +27,14 @@
     - [pyproject.toml](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/)
     - [venv](https://docs.python.org/3/library/venv.html)
     - [pre-commit](https://github.com/pre-commit/pre-commit) (hooks)
-        - [ruff](https://github.com/astral-sh/ruff)
-        - [mypy](https://github.com/python/mypy)
+      - [ruff](https://github.com/astral-sh/ruff)
+      - [mypy](https://github.com/python/mypy)
 
-### Installation:
+### Installation
 {...}
 <!-- Venv -->
   <!-- - Windows
-    - `cd "C:\Users\{User}\AppData\Local\Programs\Python\Launcher"`
+    - `cd "C:\Users\{user-name}\AppData\Local\Programs\Python\Launcher"`
     - `.\py.exe -{python-version} -m venv "{path}/{project-name}/venv-{python-version}"` <sub>suggested</sub>
     - everything below
   - Linux
@@ -46,7 +46,7 @@
   4. `pip install .`
   5. double check with `which python` (Linux) -->
 
-### Usage:
+### Usage
   - project
     - {...}
   - local tests
@@ -58,7 +58,26 @@
     <!-- - - `pre-commit run` will install a .venv inside `~/.cache/pre-commit/` -->
   - local CD
     - AppImage deployment
-    - - refer to [AppImage/README](AppImage/README.md)
+      - See [AppImage/README.md](AppImage/README.md)
+
+#### Repository structure
+```
+.
+├── .github
+│   ├── CHANGELOG_TEMPLATE         # Template for CHANGELOG.md
+│   ├── CODEOWNERS_TEMPLATE        # Template for CODEOWNERS
+│   ├── PULL_REQUEST_TEMPLATE      # Additional pull request templates
+│   ├── CODEOWNERS                 # Code owners
+│   └── pull_request_template.md   # Default pull request template
+├── AppImage                       # AppImage recipe and build guide
+├── docs                           # Documentation assets
+├── {project-name}                 # Project source code
+├── .pre-commit-config.yaml        # pre-commit hooks (local CI)
+├── CHANGELOG.md                   # Project changelog
+├── LICENSE                        # Project license
+├── pyproject.toml                 # Project metadata and tool configuration
+└── README.md                      # Project documentation
+```
 
 ## Example
 ### {example-1-title}

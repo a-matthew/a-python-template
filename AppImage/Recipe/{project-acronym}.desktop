@@ -1,9 +1,10 @@
 [Desktop Entry]
 Type=Application
-Version=1.{project-version}
+Version=1.5
+X-AppImage-Version={project-version}
 Name={project-acronym}
 GenericName={project-full-name}
-Comment={project-description}
+Comment={project-summary}
 Icon={project-acronym}
 Exec={project-acronym}-x86_64.AppImage
 Terminal=true

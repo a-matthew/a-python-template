@@ -10,7 +10,7 @@ Properly described PRs self-describe new Releases.
 --->
 
 <!--
-{user-story-title/issue-title} - {link}:
+{story-title} - {story-url}:
 ### Added
 - 
 ### Changed

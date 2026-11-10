@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 <!--
 Template
-## [{version}] - {year-month-day}
+## [{project-version}] - {YYYY-MM-DD}
 
 ### Added
 ### Changed
@@ -16,6 +16,4 @@ Template
 ### Security
 -->
 
-## [0.0.0] - {YYYY-MM-DD}
-### Added
-- {...}
+## [Unreleased] - {YYYY-MM-DD}

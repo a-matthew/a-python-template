@@ -9,10 +9,10 @@
 		<p>{project-description}</p>
 	</description>
 	<launchable type="desktop-id">{project-acronym}.desktop</launchable>
-	<url type="homepage">https://github.com/a-matthew/{project-url}</url>
+	<url type="homepage">https://github.com/{project-organization}/{project-name}</url>
 	<screenshots>
 		<screenshot type="default">
-			<image>https://github.com/a-matthew/{project-url}</image>
+			<image>{project-screenshot-url}</image>
 		</screenshot>
 	</screenshots>
 	<provides>

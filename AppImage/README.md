@@ -9,7 +9,7 @@ A detailed comparison of `AppImage types` is available at the official [AppImage
 - for `type2` refer to: [AppImageTool](https://github.com/AppImage/appimagetool)
 
 ## Setup
-### Dependencies:
+### Dependencies
   - AppImage version: __type2__ <!--Type1--> <!--Type2-->
   - AppImage tool: [__python-appimage__](https://github.com/niess/python-appimage)
 
@@ -24,13 +24,13 @@ AppDir directory description can be found at the AppImage project's [documentati
 
 The attached `python-appimage` (Python-based packaging tool) template contains:
 - entrypoint.sh
-- - it defines the main executable to run within the AppImage
+  - it defines the main executable to run within the AppImage
 - requirements.txt
-- - it defines the (minimum) required packages to build AppImage with
+  - it defines the (minimum) required packages to build AppImage with
 - {project-acronym}.appdata.xml
   - this file can be generated with [AppStream generator](https://docs.appimage.org/packaging-guide/optional/appstream.html) from the AppImage's official documentation. <br>It defines the basic metadata.
 - {project-acronym}.desktop
-- - an AppImage integration details, keywords can be found at the official FreeDesktop's project [specification](https://specifications.freedesktop.org/desktop-entry/latest/recognized-keys.html)
+  - an AppImage integration details, keywords can be found at the official FreeDesktop's project [specification](https://specifications.freedesktop.org/desktop-entry/latest/recognized-keys.html)
 - {project-acronym}.svg
 
 #### AppImage Artifact
@@ -38,19 +38,19 @@ The final package can be extracted for debugging purposes using `./{project-acro
 
 The artifact's internal directory structure should resemble the following:
 - AppRun
-- - the entrypoint
+  - the entrypoint
 - opt
-- - Python dependencies
+  - Python dependencies
 - other files
-- - assets and other files
+  - assets and other files
 
-### Installation:
+### Installation
 <!-- python-appimage -->
 `python-appimage` based project examples may be found at [project's github](https://github.com/niess/python-appimage/tree/master/applications)
 
 <!-- Venv -->
   - Windows
-    - `cd "C:\Users\{User}\AppData\Local\Programs\Python\Launcher"`
+    - `cd "C:\Users\{user-name}\AppData\Local\Programs\Python\Launcher"`
     - `.\py.exe -3.14 -m venv "{path}/{project-name}/venv-3.14"` <sub>suggested</sub>
     - everything below
   - Linux
