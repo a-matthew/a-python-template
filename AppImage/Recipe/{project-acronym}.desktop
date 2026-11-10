@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.5
+X-AppImage-Version={project-version}
+Name={project-acronym}
+GenericName={project-full-name}
+Comment={project-summary}
+Icon={project-acronym}
+Exec={project-acronym}-x86_64.AppImage
+Terminal=true
+MimeType=image/svg+xml;
+Categories=Utility;
+Keywords="{project-keyword-1}" "{project-keyword-2}"

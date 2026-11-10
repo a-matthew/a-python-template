@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+	<id>{project-acronym}</id>
+	<metadata_license>GPL-3.0</metadata_license>
+	<project_license>GPL-3.0</project_license>
+	<name>{project-full-name}</name>
+	<summary>{project-summary}</summary>
+	<description>
+		<p>{project-description}</p>
+	</description>
+	<launchable type="desktop-id">{project-acronym}.desktop</launchable>
+	<url type="homepage">https://github.com/{project-organization}/{project-name}</url>
+	<screenshots>
+		<screenshot type="default">
+			<image>{project-screenshot-url}</image>
+		</screenshot>
+	</screenshots>
+	<provides>
+		<id>{project-acronym}.desktop</id>
+	</provides>
+</component>

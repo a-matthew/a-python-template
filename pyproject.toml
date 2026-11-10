@@ -1,0 +1,75 @@
+# ================================
+# Name: 'a-python-template'/pyproject.toml
+# Author: 'a-matthew'/Mateusz A.
+# Year: 2026
+# Comments: This project can be installed using placeholder information.
+# ================================
+
+# https://peps.python.org/pep-0518/
+
+[project]
+name = "project-name"
+version = "0.1.0"
+authors = [
+    {name = "author-alias", email = "author.git@email.domain"},
+]
+maintainers = [
+    {name = "maintainer-alias", email = "maintainer.git@email.domain"},
+]
+description = "{project-summary}"
+keywords = ["{project-keyword-1}", "{project-keyword-2}"]
+classifiers = [
+    # How mature is this project? Common values are
+    #   3 - Alpha
+    #   4 - Beta
+    #   5 - Production/Stable
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+    "Operating System :: POSIX :: Linux",
+]
+license = "GPL-3.0-or-later" # https://packaging.python.org/en/latest/guides/licensing-examples-and-user-scenarios/
+# license-files = ["LICENSE" ]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pre-commit~=4.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/project-organization/project-name"
+Documentation = "https://github.com/project-organization/project-name"
+Repository = "https://github.com/project-organization/project-name.git"
+Issues = "https://github.com/project-organization/project-name/issues"
+Changelog = "https://github.com/project-organization/project-name/releases"
+
+[tool.ruff]
+target-version = "py314" # py314
+line-length = 88
+indent-width = 4
+
+[tool.ruff.format]
+# Black-compatible formatting
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+docstring-code-format = false
+line-ending = "auto"
+
+[tool.ruff.lint]
+# Enable the isort rules.
+extend-select = ["I"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+
+[tool.mypy]
+python_version = "3.14"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+show_error_codes = true
+no_implicit_optional = true
+warn_unused_ignores = true
+# exclude = ["{exclude-pattern}"]
