@@ -1,7 +1,7 @@
 <sup>This project has been generated using ['A-Python-Template' (APT)](https://github.com/a-matthew/a-python-template).</sup>
 
 ## Metadata
-Lots of information regarding AppImage building process and specifications can be found under the AppImage project's [GitHub Wiki](https://github.com/AppImage/AppImageKit/wiki)
+Lots of information regarding the AppImage building process and specifications can be found under the AppImage project's [GitHub Wiki](https://github.com/AppImage/AppImageKit/wiki).
 - for AppImage recipes refer to: [Wiki/AppImages](https://github.com/AppImage/AppImageKit/wiki/AppImages) (not maintained)
 
 A detailed comparison of `AppImage types` is available at the official [AppImageSpec](https://github.com/AppImage/AppImageSpec/blob/master/draft.md#appdir) repository.
@@ -20,21 +20,21 @@ A detailed comparison of `AppImage types` is available at the official [AppImage
 > `"Fuse is not supported on Windows Subsystem for Linux v1 (WSL1), which prevents the direct execution of AppImages. However, it is still possible to extract the contents of Python AppImages and use them, as explained in the Advanced installation section."`
 
 ### AppDir
-AppDir directory description can be found at the AppImage project's [documentation](https://docs.appimage.org/reference/appdir.html).
+The AppDir directory description can be found at the AppImage project's [documentation](https://docs.appimage.org/reference/appdir.html).
 
 The attached `python-appimage` (Python-based packaging tool) template contains:
 - entrypoint.sh
   - it defines the main executable to run within the AppImage
 - requirements.txt
-  - it defines the (minimum) required packages to build AppImage with
+  - it defines the (minimum) required packages to build the AppImage with
 - {project-acronym}.appdata.xml
-  - this file can be generated with [AppStream generator](https://docs.appimage.org/packaging-guide/optional/appstream.html) from the AppImage's official documentation. <br>It defines the basic metadata.
+  - this file can be generated with the [AppStream generator](https://docs.appimage.org/packaging-guide/optional/appstream.html) from AppImage's official documentation. <br>It defines the basic metadata.
 - {project-acronym}.desktop
-  - an AppImage integration details, keywords can be found at the official FreeDesktop's project [specification](https://specifications.freedesktop.org/desktop-entry/latest/recognized-keys.html)
+  - AppImage integration details and keywords can be found in the official FreeDesktop project's [specification](https://specifications.freedesktop.org/desktop-entry/latest/recognized-keys.html)
 - {project-acronym}.svg
 
 #### AppImage Artifact
-The final package can be extracted for debugging purposes using `./{project-acronym}-x86_64.AppImage --appimage-extract` command in the CLI.
+The final package can be extracted for debugging purposes using the `./{project-acronym}-x86_64.AppImage --appimage-extract` command in the CLI.
 
 The artifact's internal directory structure should resemble the following:
 - AppRun
@@ -46,7 +46,7 @@ The artifact's internal directory structure should resemble the following:
 
 ### Installation
 <!-- python-appimage -->
-`python-appimage` based project examples may be found at [project's github](https://github.com/niess/python-appimage/tree/master/applications)
+`python-appimage`-based project examples may be found at [project's GitHub](https://github.com/niess/python-appimage/tree/master/applications).
 
 <!-- Venv -->
   - Windows
@@ -60,8 +60,8 @@ The artifact's internal directory structure should resemble the following:
   2. `source venv-3.14/bin/activate`
   3. `pip install --upgrade pip`
   4. `pip install .`
-  5. double check with `which python` (Linux)
-  6. Update files in `AppImage/Recipe` directory
+  5. double-check with `which python` (Linux)
+  6. Update files in the `AppImage/Recipe` directory
   7. Build with `python-appimage build app -p 3.14 AppImage/Recipe -x {project-name}`
   8. It is important that all dependencies of the app are within one folder. Best practices are covered by the AppImage project's [documentation](https://docs.appimage.org/reference/best-practices.html).
 
