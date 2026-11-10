@@ -1,5 +1,7 @@
 <sup>This project has been generated using ['A-Python-Template' (APT)](https://github.com/a-matthew/a-python-template).</sup>
 
+# {project-name}
+
 ## Metadata
 <!-- - Author: {author-profile-name}/{author-alias}. -->
 - Name: '{project-name}'.
@@ -9,6 +11,10 @@
   - This project's license: [GNU General Public License v3.0](LICENSE)
   <!-- - Dependency-1: [{dependency-name}({license-1-name})] -->
   <!-- - Dependency-2: [{dependency-name}({license-2-name})] -->
+
+## Features
+- {feature-1}
+- {feature-2}
 
 ## Setup
 ### Dependencies:
@@ -57,3 +63,7 @@
 ## Example
 ### {example-1-title}
 {...}
+
+<!-- 
+## Troubleshooting
+-->
